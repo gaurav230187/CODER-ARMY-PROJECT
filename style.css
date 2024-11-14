@@ -1,0 +1,49 @@
+* {
+  padding: 5px;
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-weight: bolder;
+}
+
+body {
+  background: linear-gradient(135deg, white, blue);
+  height: 100vh;
+  margin: 0;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  position: relative; 
+}
+
+.Nav-List {
+  display: flex;
+  justify-content: space-around;
+  background: #E6E6FA;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; 
+  list-style-type: none;
+}
+
+
+
+@media (max-width: 500px) {
+
+
+  .Nav-List {  
+    position: absolute;
+    top: 40px; 
+    right: 0; 
+    width: 100%;
+    transform: translateX(100%); 
+    transition: transform 0.5s ease; 
+    flex-direction: column;
+  }
+
+  .Container:hover .Nav-List {
+    transform: translateX(0); 
+  }
+}
