@@ -148,7 +148,7 @@ p {
 img {
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 75%;
   width: 320px;
   height: 240px;
   transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
